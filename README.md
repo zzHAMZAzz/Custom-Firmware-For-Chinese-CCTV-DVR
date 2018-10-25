@@ -45,6 +45,7 @@ Firstly, change directory to the location of your */folderyoucreated/*
     cd /blah/blah/folderyoucreated
 
 Now we are going to make a cramfs image out of the folder's contents
+   
     -USAGE-
     mkfs.cramfs -v [folderwithcontents] [nameofimagetomake]
     
