@@ -57,8 +57,8 @@ We now have an image called new_image.img, but we now need to use uboot-tools (i
     mkimage -A ARM -O linux -C gzip -n linux -a 0x00E80000 -e 0x00EC0000 -d [originalimage] [nameofimagetomake]
     
     -EXAMPLE-
-    mkimage -A ARM -O linux -C gzip -n linux -a 0x00E80000 -e 0x00EC0000 -d [new_image.img] [new_image2.img]
-    
+    mkimage -A ARM -O linux -C gzip -n linux -a 0x00E80000 -e 0x00EC0000 -d new_image.img new_image2.img
+   
 We should now have a finalised image called **new_image2.img** which you can rename back to whichever original image you modified, therefore I can change the name of this image to **logo-x.cramfs.img**
 
 With this finished .img, you can get back onto 7Zip to open the original .bin firmware, and overwrite the old **logo-x.cramfs.img** with your new modified image.
